@@ -113,4 +113,4 @@ echo "Press Ctrl+C to stop the server"
 echo "----------------------------------------"
 
 # Run the Flask application
-nohup python3 app.py > log.txt 2>&1 
+python3 app.py 
