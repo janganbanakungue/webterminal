@@ -61,10 +61,10 @@ else
     print_status "Installing Python dependencies (Flask, Requests, and Delete Blinker..."
     sudo rm -rf /usr/lib/python3/dist-packages/blinker* 
     sudo rm -rf /usr/local/lib/python3.*/dist-packages/blinker* 
-    ssudo rm -rf /usr/lib/python3.*/dist-packages/blinker* 
+    sudo rm -rf /usr/lib/python3.*/dist-packages/blinker* 
     sudo pip3 install --upgrade setuptools pip 
     sudo python3 -m pip install --upgrade pip
-    python3 -m pip3 install flask requests
+    python3 -m pip install flask requests
     
     if [ $? -eq 0 ]; then
         print_success "Flask and Requests installed successfully"
